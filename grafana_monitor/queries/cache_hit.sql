@@ -1,5 +1,5 @@
 
-SELECT CASE WHEN scanned_bytes_cache > 0 THEN 'Cold' ELSE 'Warm' END AS "Query Cache Status"
+SELECT CASE WHEN scanned_bytes_storage > 0 THEN 'Cold' ELSE 'Warm' END AS "Query Cache Status"
 , COUNT(*) AS "Number Queries"
 , AVG(duration_usec) AS "Avg Duration"
 , MAX(duration_usec) AS "Max Duration"
